@@ -1,4 +1,4 @@
-﻿namespace AbstractFactoryAndSingleton.BaseClasses
+﻿namespace AbstractFactoryAndSingleton
 {
     public abstract class Driver
     {
