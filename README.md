@@ -1,3 +1,3 @@
 # Репозиторий для реализации паттернов GoF
 
-[Абстрактная фабрика и синглтон](../tree/master/AbstractFactoryAndSingleton)
+[Абстрактная фабрика и синглтон](/tree/master/AbstractFactoryAndSingleton)
