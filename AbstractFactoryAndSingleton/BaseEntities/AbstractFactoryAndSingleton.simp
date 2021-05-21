@@ -1,0 +1,1195 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simpeb1c5dba4bd048dcacdfb6463e720649">
+  <meta>
+    <name>AbstractFactoryAndSingleton</name>
+    <authors>Илья Григорьев</authors>
+    <description />
+  </meta>
+  <counters models="3">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>17</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>15</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>21</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>15</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="containment" type="Containment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>1068</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>18</value>
+      </counter>
+      <counter>
+        <item-type type-id="realization" type="Realization" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>29</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-3281009d94d44477920cec050b03b5a1" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Илья</first-name>
+        <last-name>Григорьев</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-82662ab6ee824ffbb3d2db7816510b36" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="int" tid="" name="int" description="" />
+      <type id="float" tid="" name="float" description="" />
+      <type id="Driver" tid="" name="Driver" description="" />
+      <type id="Vehicle" tid="" name="Vehicle" description="" />
+      <type id="AbstractFactoryAndSingleton.Passenger" tid="" name="AbstractFactoryAndSingleton.Passenger" description="" />
+      <type id="string[]" tid="" name="string[]" description="" />
+      <type id="VehicleFactory" tid="" name="VehicleFactory" description="" />
+      <type id="PassengerFactory" tid="" name="PassengerFactory" description="" />
+      <type id="DriverFactory" tid="" name="DriverFactory" description="" />
+      <type id="List&lt;Vehicle&gt;" tid="" name="List&lt;Vehicle&gt;" description="" />
+      <type id="List&lt;Driver&gt;" tid="" name="List&lt;Driver&gt;" description="" />
+      <type id="bool" tid="" name="bool" description="" />
+      <type id="Type" tid="" name="Type" description="" />
+      <type id="ICollection&lt;Passenger&gt;" tid="" name="ICollection&lt;Passenger&gt;" description="" />
+      <type id="Passenger" tid="" name="Passenger" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p0ec1cdd2167a4044a624554e58728774_986920447" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>05/20/2021 23:38:20</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="aadd6f5e2ad245d4aea39a83c73fa3ec" cid="PKG001" type="package" name="AbstractFactoryAndSingleton" style-class="" creator="" creation-date="05/20/2021 23:38:33" />
+        <item id="0030985b90c5474cac1e20a8c8f9ef95" cid="PKG002" type="package" name="BaseClasses" style-class="" creator="" creation-date="05/20/2021 23:38:33" />
+        <item id="815fa62ead5f47ff9b80a15b59335142" cid="CNT001" type="containment" name="" style-class="" creator="" creation-date="05/20/2021 23:38:33" from="0030985b90c5474cac1e20a8c8f9ef95" to="aadd6f5e2ad245d4aea39a83c73fa3ec" />
+      </abstract-items>
+      <sub-models>
+        <model id="p5dc2c0aa6875427a8773d8544f6c0d5f_649823228" name="AbstractFactoryAndSingleton" namespace="AbstractFactoryAndSingleton" order-index="2">
+          <meta>
+            <authors>
+              <author> </author>
+            </authors>
+            <description />
+            <creation-date>05/20/2021 23:38:33</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <abstract-items>
+            <item id="77bbc4beefa5416e821c9face2b9023c" cid="C001" type="class" name="Bus" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv209da7fe06694dddbe856cbee065fece" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="o7e4adf28b91546a4840d2575e362564c955" cid="OP001" name="Bus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pcaaf8ce6b4be4fa59f60ff3b8f42536e" name="capacity" type="int" type-id="int" default-value="40" />
+                    <parameter id="p4ac0d9d854d041938dd151d9e3c167bf" name="price" type="float" type-id="float" default-value="10" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="ob127113cfd7a473e816d761c40d48b01955" cid="OP002" name="Embus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pcc42810939284f2eaca29d1bbaba786e" name="driver" type="Driver" type-id="Driver" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (driver is BusDriver)
+            {
+                Driver = driver;
+            }
+            else
+            {
+                throw new Exception($"Not supported driver type, {nameof(BusDriver)} expected");
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="cdf1f3fa0795493e81639a1562f0571c" cid="C002" type="class" name="BusDriver" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv8e906da55497426c8732f06781470631" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <background type="horizontal-linear" colors="#FFF2F2F2,#FFFFFFFF" />
+                <border color="#FF2A2A2A" width="2" dash-style="Solid" />
+                <label-connector color="#80000000" width="1" dash-style="Dash" />
+                <alternate-styles>
+                  <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                    <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                    <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <background type="solid" colors="#FF203D85,#FF203D85" />
+                    <border color="#FF203D85" width="2" dash-style="Solid" />
+                    <label-connector color="#80000000" width="1" dash-style="Dash" />
+                  </alternate-style>
+                </alternate-styles>
+              </style>
+            </item>
+            <item id="2887da71cc794ff6b917ec979750a52c" cid="C003" type="class" name="BusDriverFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv6302edeea28940378b61c173e3469561" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="o7dd6921335d24d19afac4a410e5b9dfd955" cid="OP003" name="GetDriver" creation-date="05/20/2021 23:38:33" type="Driver" type-id="Class:c965d0387240466db39f138ebf8a698d" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return new BusDriver();
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="b155ceb22c4848b6bb21f557d67deb69" cid="C004" type="class" name="BusFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvfa3acebb302c48249ea8d8308a4967fa" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="o4ed4ef58043a4dd69891e1d1833d091a955" cid="OP004" name="GetVehicle" creation-date="05/20/2021 23:38:33" type="Vehicle" type-id="Class:4fb81c21dd1c417593c1cc3ed48baf4b" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return new Bus();
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="c965d0387240466db39f138ebf8a698d" cid="C005" type="class" name="Driver" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public" is-abstract="true">
+              <tagged-values>
+                <tagged-value id="tv6f415b7abb1d4532999ebd432729f4f3" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <background type="horizontal-linear" colors="#FFF2F2F2,#FFFFFFFF" />
+                <border color="#FF2A2A2A" width="2" dash-style="Solid" />
+                <label-connector color="#80000000" width="1" dash-style="Dash" />
+                <alternate-styles>
+                  <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                    <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                    <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <background type="solid" colors="#FF203D85,#FF203D85" />
+                    <border color="#FF203D85" width="2" dash-style="Solid" />
+                    <label-connector color="#80000000" width="1" dash-style="Dash" />
+                  </alternate-style>
+                </alternate-styles>
+              </style>
+            </item>
+            <item id="5cf1034e0f9844768da4254413bb7ba2" cid="C006" type="class" name="DriverFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public" is-abstract="true">
+              <tagged-values>
+                <tagged-value id="tve789ab890f0747f887f68333d998a9f0" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="oa7868d2b703f4b22ba0bad9e3212fca4955" cid="OP005" name="GetDriver" creation-date="05/20/2021 23:38:33" type="Driver" type-id="Class:c965d0387240466db39f138ebf8a698d" visibility="public" abstract="true" />
+              </operations>
+            </item>
+            <item id="d283268caab04a4694d3f24c8c4dbcd2" cid="C007" type="class" name="Passenger" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvc69f4e94b1b94637b157b7455f0baafe" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="c8ef75c1bd384fd598cfa084063850d1" />
+              </owned-items>
+              <attributes>
+                <attribute id="abfcff7e56a384d31889cceaeb18c1534955" cid="PROP001" name="Money" creation-date="05/20/2021 23:38:33" property-ref="c8ef75c1bd384fd598cfa084063850d1" />
+              </attributes>
+              <operations>
+                <operation id="of62c6528a3e34246a429af02ce3953df955" cid="OP006" name="Passenger" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p67f68c79c30d4e7abb476439c142837f" name="money" type="float" type-id="float" default-value="25" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o15d8dde599804fe9a175fffca536dd40955" cid="OP007" name="Pay" creation-date="05/20/2021 23:38:33" type="float" type-id="float" visibility="public">
+                  <parameters>
+                    <parameter id="p3c0dabbc5f9841d3ae12ff3c6ef222df" name="price" type="float" type-id="float" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (Money &lt; 0) return 0;
+
+            Money -= price;
+            return price;
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="c8ef75c1bd384fd598cfa084063850d1" cid="PROP001" type="property" name="Money" style-class="" owner="d283268caab04a4694d3f24c8c4dbcd2" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="c8ef75c1bd384fd598cfa084063850d1_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property />
+            </item>
+            <item id="5f4b12fea2f54c349a44a4f36a6ea302" cid="C008" type="class" name="PassengerFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvb0ef970af2bd44cf98decb9b2d013842" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="o6f44a7b820134455a9857efb5e00324a955" cid="OP008" name="GetPassenger" creation-date="05/20/2021 23:38:33" type="Passenger" type-id="Class:d283268caab04a4694d3f24c8c4dbcd2" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return new AbstractFactoryAndSingleton.Passenger();
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="15d1bb3e41874fbfa37773cc31f2a9fc" cid="C009" type="class" name="Program" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv060c8d305fa4484592b8dd5f03df0162" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+            </item>
+            <item id="3f123036cdd64e80a123396af8a406a4" cid="C010" type="class" name="Station" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv073cc8d09fd945d7af7a30f406a3cdf7" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="f48ee16b58834087826b7e1e67463141" />
+                <owned-item ref="b53e6bc95b2842079bbba94d41fd19bb" />
+                <owned-item ref="04d0bb1459614744b7f5cba5eb252b90" />
+                <owned-item ref="6320785cfc744e05876e875b9341144f" />
+                <owned-item ref="c519bb17f22e438da30fc4570bedcc87" />
+                <owned-item ref="58b657b6548540b898d557057529c844" />
+                <owned-item ref="905593f9882a4f3fa3e2f878c55173a3" />
+                <owned-item ref="7e12ea5b42f446229a388de346e0b88e" />
+              </owned-items>
+              <attributes>
+                <attribute id="a321080d96d0345e486242ff61a17c57c955" cid="PROP002" name="_station" creation-date="05/20/2021 23:38:33" property-ref="f48ee16b58834087826b7e1e67463141" />
+                <attribute id="a2c27345de866490ca1854b91acf89af5955" cid="PROP003" name="_busFactory" creation-date="05/20/2021 23:38:33" property-ref="b53e6bc95b2842079bbba94d41fd19bb" />
+                <attribute id="a243466c0ab164d2a9f4059c68bb1321a955" cid="PROP004" name="_taxiFactory" creation-date="05/20/2021 23:38:33" property-ref="04d0bb1459614744b7f5cba5eb252b90" />
+                <attribute id="a584c3a1b542245f38518f8d4bde9c32f955" cid="PROP005" name="_passengerFactory" creation-date="05/20/2021 23:38:33" property-ref="6320785cfc744e05876e875b9341144f" />
+                <attribute id="a2bd60e0b88ff415db878bdf5d31af6f2955" cid="PROP006" name="_taxiDriverFactory" creation-date="05/20/2021 23:38:33" property-ref="c519bb17f22e438da30fc4570bedcc87" />
+                <attribute id="afc119eb61bfe4fff9a67e5695876970d955" cid="PROP007" name="_busDriverFactory" creation-date="05/20/2021 23:38:33" property-ref="58b657b6548540b898d557057529c844" />
+                <attribute id="abb69c255780d4e51a455c6f37daeafe9955" cid="PROP008" name="_vehicles" creation-date="05/20/2021 23:38:33" property-ref="905593f9882a4f3fa3e2f878c55173a3" />
+                <attribute id="aa64ed56bc117410888d5f51831853be6955" cid="PROP009" name="_drivers" creation-date="05/20/2021 23:38:33" property-ref="7e12ea5b42f446229a388de346e0b88e" />
+              </attributes>
+              <operations>
+                <operation id="o7086b25af9454f1c99eeb486c9735f0e955" cid="OP010" name="GetStation" creation-date="05/20/2021 23:38:33" type="Station" type-id="Class:3f123036cdd64e80a123396af8a406a4" visibility="public" static="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return _station ??= new Station();
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o109359f1fb81494da42918439ff38917956" cid="OP011" name="Station" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="private">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o2c728c40accb40b2bfaea763d00c612e956" cid="OP012" name="MakeDefaultBus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            _vehicles.Add(_busFactory.GetVehicle());
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob0829e8bf1d94dd1a64ab9d5bd9e6c72956" cid="OP013" name="MakeDefaultTaxi" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            _vehicles.Add(_taxiFactory.GetVehicle());
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o515817ac05db4f2b9a472535cd30c109956" cid="OP014" name="MakeDefaultPassenger" creation-date="05/20/2021 23:38:33" type="Passenger" type-id="Class:d283268caab04a4694d3f24c8c4dbcd2" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return _passengerFactory.GetPassenger();
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oaf844936a1b04d8094efef5675c043fd956" cid="OP015" name="MakeDefaultTaxiDriver" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            _drivers.Add(_taxiDriverFactory.GetDriver());
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o72c4d0d3deb140bcaebf48afe9615e59956" cid="OP016" name="MakeDefaultBusDriver" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            _drivers.Add(_busDriverFactory.GetDriver());
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o4e4f3e178cf2484c94ddb7b9f42919ea956" cid="OP017" name="EmbusDriversToVehicles" creation-date="05/20/2021 23:38:33" type="bool" type-id="bool" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (!_drivers.Any())
+            {
+                return false;
+            }
+
+            foreach (var vehicle in _vehicles)
+            {
+                var driver = _drivers.FirstOrDefault(d =&gt; d.GetType() == vehicle.DriverType);
+                if (driver == null)
+                {
+                    return false;
+                }
+                vehicle.Embus(driver);
+            }
+            
+            return true;
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o1b264650852f41539fffac73a1e97952956" cid="OP018" name="EmbusPassenger" creation-date="05/20/2021 23:38:33" type="bool" type-id="bool" visibility="public">
+                  <parameters>
+                    <parameter id="padb2b50178774922a81a78724e2f052e" name="passenger" type="AbstractFactoryAndSingleton.Passenger" type-id="AbstractFactoryAndSingleton.Passenger" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+            var taxi = _vehicles.FirstOrDefault(v =&gt; v.GetType() == typeof(TVehicle) &amp;&amp; v.Passengers.Count &lt; v.Capacity);
+            
+            if (taxi == null)
+                return false;
+            try
+            {
+                taxi.Embus(passenger);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+            
+            return true;
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o95aded3c1beb4252985c6472f037a99c956" cid="OP019" name="LaunchVehicles" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            foreach (var vehicle in _vehicles)
+            {
+                vehicle.Launch();
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="f48ee16b58834087826b7e1e67463141" cid="PROP002" type="property" name="_station" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature static="true" />
+              <structural-feature type="Station" type-id="Class:3f123036cdd64e80a123396af8a406a4" />
+              <property />
+            </item>
+            <item id="b53e6bc95b2842079bbba94d41fd19bb" cid="PROP003" type="property" name="_busFactory" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="VehicleFactory" type-id="Class:ae564d0c7d784cebbc1c8fa7578b653b" />
+              <property />
+            </item>
+            <item id="04d0bb1459614744b7f5cba5eb252b90" cid="PROP004" type="property" name="_taxiFactory" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="VehicleFactory" type-id="Class:ae564d0c7d784cebbc1c8fa7578b653b" />
+              <property />
+            </item>
+            <item id="6320785cfc744e05876e875b9341144f" cid="PROP005" type="property" name="_passengerFactory" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="PassengerFactory" type-id="Class:5f4b12fea2f54c349a44a4f36a6ea302" />
+              <property />
+            </item>
+            <item id="c519bb17f22e438da30fc4570bedcc87" cid="PROP006" type="property" name="_taxiDriverFactory" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="DriverFactory" type-id="Class:5cf1034e0f9844768da4254413bb7ba2" />
+              <property />
+            </item>
+            <item id="58b657b6548540b898d557057529c844" cid="PROP007" type="property" name="_busDriverFactory" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="DriverFactory" type-id="Class:5cf1034e0f9844768da4254413bb7ba2" />
+              <property />
+            </item>
+            <item id="905593f9882a4f3fa3e2f878c55173a3" cid="PROP008" type="property" name="_vehicles" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="List&lt;Vehicle&gt;" type-id="List&lt;Vehicle&gt;" />
+              <property />
+            </item>
+            <item id="7e12ea5b42f446229a388de346e0b88e" cid="PROP009" type="property" name="_drivers" style-class="" owner="3f123036cdd64e80a123396af8a406a4" creator="" creation-date="05/20/2021 23:38:33" visibility="private">
+              <feature />
+              <structural-feature read-only="true" type="List&lt;Driver&gt;" type-id="List&lt;Driver&gt;" />
+              <property />
+            </item>
+            <item id="59381e999da14090bfbdd48db10cfc97" cid="C011" type="class" name="Taxi" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv75810e4e6ef54415a89c805f823e4f54" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="o0e7f6f3abdc24a9db023cfe36d7f510b956" cid="OP020" name="Taxi" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p46c436886e6b4028a19f1bc29a5cc0fe" name="capacity" type="int" type-id="int" default-value="4" />
+                    <parameter id="pe54298de12944f1e9e76887e2686c0f5" name="price" type="float" type-id="float" default-value="25" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="oa930f5c118444a56af40702b549c4a79956" cid="OP021" name="Embus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p9152489f172f4e60bd95d5e94ae2fc91" name="driver" type="Driver" type-id="Driver" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (driver is TaxiDriver)
+            {
+                Driver = driver;
+            }
+            else
+            {
+                throw new Exception($"Not supported driver type, {nameof(TaxiDriver)} expected");
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="2e6afde0fa33415cb96021f37ac2c4a6" cid="C012" type="class" name="TaxiDriver" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv13c03bcc43e74432b698c76be9cc1b62" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                <background type="horizontal-linear" colors="#FFF2F2F2,#FFFFFFFF" />
+                <border color="#FF2A2A2A" width="2" dash-style="Solid" />
+                <label-connector color="#80000000" width="1" dash-style="Dash" />
+                <alternate-styles>
+                  <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                    <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                    <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                    <background type="solid" colors="#FF203D85,#FF203D85" />
+                    <border color="#FF203D85" width="2" dash-style="Solid" />
+                    <label-connector color="#80000000" width="1" dash-style="Dash" />
+                  </alternate-style>
+                </alternate-styles>
+              </style>
+            </item>
+            <item id="b1b09031167647cbb8df805436239f64" cid="C013" type="class" name="TaxiDriverFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv69f2d8b3990548e18488c3dc73e46403" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="ocfd6f6b4785745b19a350f18f1b9891f956" cid="OP022" name="GetDriver" creation-date="05/20/2021 23:38:33" type="Driver" type-id="Class:c965d0387240466db39f138ebf8a698d" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return new TaxiDriver();
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="85856c3d50ce402f90629dcb727bce13" cid="C014" type="class" name="TaxiFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv5356828ee8674474be4a7aa3276cfeb7" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <operations>
+                <operation id="oe89f5cfc079648b7810b3d521c62274c956" cid="OP023" name="GetVehicle" creation-date="05/20/2021 23:38:33" type="Vehicle" type-id="Class:4fb81c21dd1c417593c1cc3ed48baf4b" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            return new Taxi();
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="4fb81c21dd1c417593c1cc3ed48baf4b" cid="C015" type="class" name="Vehicle" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public" is-abstract="true">
+              <tagged-values>
+                <tagged-value id="tvd8a6d714a115465e9afc951e420a58f1" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="a189e6667a694032823626d700f66603" />
+                <owned-item ref="3457602817b34b05a1f279b2106d3961" />
+                <owned-item ref="0d6a873d202f4fafb3039f84555bf109" />
+                <owned-item ref="04cd4a390f1644d39c95a667ca370ddc" />
+                <owned-item ref="87329dc3b4e240b2beedd486520a97fb" />
+              </owned-items>
+              <attributes>
+                <attribute id="add8d66b6cbfc43c4999f7f7b2e852d84956" cid="PROP010" name="DriverType" creation-date="05/20/2021 23:38:33" property-ref="a189e6667a694032823626d700f66603" />
+                <attribute id="ad64cfadb20714a1b8db12f565d346a3b956" cid="PROP011" name="Capacity" creation-date="05/20/2021 23:38:33" property-ref="3457602817b34b05a1f279b2106d3961" />
+                <attribute id="af8f3ef5529fe43eba73039a1a87c9d6f956" cid="PROP012" name="Price" creation-date="05/20/2021 23:38:33" property-ref="0d6a873d202f4fafb3039f84555bf109" />
+                <attribute id="abdd7b70c36844a0abc321760f559ce7d956" cid="PROP013" name="Passengers" creation-date="05/20/2021 23:38:33" property-ref="04cd4a390f1644d39c95a667ca370ddc" />
+                <attribute id="a7ba4744b363948ef9ce1bf68c9749740956" cid="PROP014" name="Driver" creation-date="05/20/2021 23:38:33" property-ref="87329dc3b4e240b2beedd486520a97fb" />
+              </attributes>
+              <operations>
+                <operation id="o9c59d4bdfc3846259f78cb71d068c916956" cid="OP024" name="Vehicle" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pb6becf34c3664c1c96924b8ae9d6cdaa" name="capacity" type="int" type-id="int" />
+                    <parameter id="p35e39864b6024aa09458b7d41fe91c5d" name="price" type="float" type-id="float" />
+                    <parameter id="p6e4b7f90a91b41e1a569e7f1e8c798fa" name="driverType" type="Type" type-id="Type" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="ob7dee11934b44b4b97e421c1c7750016956" cid="OP025" name="Embus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public" abstract="true">
+                  <parameters>
+                    <parameter id="p7ad8939bb7a54fd08739bbe0ef3a2ea1" name="driver" type="Driver" type-id="Driver" />
+                  </parameters>
+                </operation>
+                <operation id="o54a6060bd9fa4db596853823a11272d6956" cid="OP026" name="Embus" creation-date="05/20/2021 23:38:33" type="" type-id="" visibility="public" virtual="true">
+                  <parameters>
+                    <parameter id="p2be6ec0b53074cb3a0a8eb29e660b15f" name="passenger" type="Passenger" type-id="Passenger" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (Passengers.Count &lt; Capacity)
+            {
+                if (passenger.Pay(Price) &gt; 0)
+                {
+                    Passengers.Add(passenger); 
+                }
+                else
+                {
+                    throw new Exception("Passenger don't have enough money.");
+                }
+            }
+            else
+            {
+                throw new Exception("Capacity limit exceed, no more passengers can embus.");
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o1ae7ee91f09940c1a29f93166bc5e0ce957" cid="OP027" name="Launch" creation-date="05/20/2021 23:38:33" type="bool" type-id="bool" visibility="public" virtual="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+            if (Driver == null || !Passengers.Any()) return false;
+            
+            Console.WriteLine($"The {GetType().FullName?.Split('.').Last() ?? "vehicle"} leaves station with {Passengers.Count} passenger(s)");
+            return true;
+
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="a189e6667a694032823626d700f66603" cid="PROP010" type="property" name="DriverType" style-class="" owner="4fb81c21dd1c417593c1cc3ed48baf4b" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <feature />
+              <structural-feature read-only="true" type="Type" type-id="Type" />
+              <property />
+            </item>
+            <item id="3457602817b34b05a1f279b2106d3961" cid="PROP011" type="property" name="Capacity" style-class="" owner="4fb81c21dd1c417593c1cc3ed48baf4b" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="3457602817b34b05a1f279b2106d3961_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="0d6a873d202f4fafb3039f84555bf109" cid="PROP012" type="property" name="Price" style-class="" owner="4fb81c21dd1c417593c1cc3ed48baf4b" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="0d6a873d202f4fafb3039f84555bf109_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property />
+            </item>
+            <item id="04cd4a390f1644d39c95a667ca370ddc" cid="PROP013" type="property" name="Passengers" style-class="" owner="4fb81c21dd1c417593c1cc3ed48baf4b" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="04cd4a390f1644d39c95a667ca370ddc_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="ICollection&lt;Passenger&gt;" type-id="ICollection&lt;Passenger&gt;" />
+              <property />
+            </item>
+            <item id="87329dc3b4e240b2beedd486520a97fb" cid="PROP014" type="property" name="Driver" style-class="" owner="4fb81c21dd1c417593c1cc3ed48baf4b" creator="" creation-date="05/20/2021 23:38:33" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="87329dc3b4e240b2beedd486520a97fb_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="Driver" type-id="Class:c965d0387240466db39f138ebf8a698d" />
+              <property />
+            </item>
+            <item id="f660a9f1753442ac8d23cdbdd2dfdb16" cid="GNR004" type="generalization" name="" style-class="" creator="" creation-date="05/20/2021 23:38:33" from="b155ceb22c4848b6bb21f557d67deb69" to="ae564d0c7d784cebbc1c8fa7578b653b" />
+            <item id="fed85e19861c4831beb68178dee1c477" cid="GNR008" type="generalization" name="" style-class="" creator="" creation-date="05/20/2021 23:38:33" from="85856c3d50ce402f90629dcb727bce13" to="ae564d0c7d784cebbc1c8fa7578b653b" />
+            <item id="8b4b0524ef544cbd95e3bbef90011a6c" cid="REL011" type="relationship" name="" style-class="" creator="" creation-date="05/20/2021 23:38:33" from="3f123036cdd64e80a123396af8a406a4" to="ae564d0c7d784cebbc1c8fa7578b653b" visibility="package">
+              <relation from="3f123036cdd64e80a123396af8a406a4" to="ae564d0c7d784cebbc1c8fa7578b653b" derived="false">
+                <start-role id="umlar-2a3652c2-5a34-440b-858e-b18f0ce9bd53" name="" navigability="" association-type="composition" visibility="private" />
+                <end-role id="umlar-ebb824b0-cc9f-48d2-a2b7-7432366c7c89" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+          </abstract-items>
+          <sub-models>
+            <model id="p5b46ad94aa044a849656324c8a26d090_363095111" name="BaseClasses" namespace="AbstractFactoryAndSingleton.BaseClasses" order-index="1">
+              <meta>
+                <authors>
+                  <author> </author>
+                </authors>
+                <description />
+                <creation-date>05/20/2021 23:38:33</creation-date>
+                <change-date>01/01/0001 00:00:00</change-date>
+                <revision-count>0</revision-count>
+                <version />
+              </meta>
+              <abstract-items>
+                <item id="ae564d0c7d784cebbc1c8fa7578b653b" cid="C016" type="class" name="VehicleFactory" style-class="" creator="" creation-date="05/20/2021 23:38:33" visibility="public" is-abstract="true">
+                  <tagged-values>
+                    <tagged-value id="tvdddb61f342e747adbfa8043c576058a9" name="namespace" type="text" multiple="false" value="AbstractFactoryAndSingleton.BaseClasses" />
+                  </tagged-values>
+                  <operations>
+                    <operation id="o39e9f6b6350746738d26045b35b88eac957" cid="OP028" name="GetVehicle" creation-date="05/20/2021 23:38:33" type="Vehicle" type-id="Class:4fb81c21dd1c417593c1cc3ed48baf4b" visibility="public" abstract="true" />
+                  </operations>
+                </item>
+                <item id="8e918d09106b4de2884e698f5c953858" cid="REL010" type="relationship" name="" style-class="" creator="" creation-date="05/20/2021 23:38:33" from="ae564d0c7d784cebbc1c8fa7578b653b" to="4fb81c21dd1c417593c1cc3ed48baf4b" visibility="package">
+                  <relation from="ae564d0c7d784cebbc1c8fa7578b653b" to="4fb81c21dd1c417593c1cc3ed48baf4b" derived="false">
+                    <start-role id="umlar-54123925-04ff-43e3-8ddb-7206b777c489" name="" navigability="" association-type="aggregation" visibility="private" />
+                    <end-role id="umlar-5f68ce9b-ef72-4dc3-b6cd-77858438dca5" name="" navigability="" association-type="association" visibility="private" />
+                  </relation>
+                </item>
+              </abstract-items>
+              <sub-models />
+              <diagram type="uml-class" id="pc677518090bb451c8ba518e469f5a201_276879902" name="BaseClasses" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="AbstractFactoryAndSingleton.BaseClasses" view-location="-100,-100">
+                <style>
+                  <background-color index="1" color="#FFFFFFFF" />
+                  <background-color index="2" color="#FFFFFFFF" />
+                  <background-type type="vertical-linear" />
+                </style>
+                <meta>
+                  <authors>
+                    <author> </author>
+                  </authors>
+                  <description />
+                  <creation-date>05/20/2021 23:38:33</creation-date>
+                  <change-date>05/20/2021 23:38:33</change-date>
+                  <revision-count>0</revision-count>
+                  <version />
+                </meta>
+                <abstract-items />
+                <layer id="f94efd977b8b4bccb757f74decbf8253" name="Default" visible="true" enabled="true" locked="false" />
+              </diagram>
+            </model>
+          </sub-models>
+          <diagram type="uml-class" id="p6a5d8bb8ac40417289129e498dbab59a_778255093" name="AbstractFactoryAndSingleton" order-index="2" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="AbstractFactoryAndSingleton" view-location="21,118" zoom="0.8">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>05/20/2021 23:38:33</creation-date>
+              <change-date>05/21/2021 00:25:31</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items>
+              <item id="ce25543d9e464f5cb848b3442dc5e48c" cid="ELEM002" type="universal-connector" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:46:29" from="15d1bb3e41874fbfa37773cc31f2a9fc" to="3f123036cdd64e80a123396af8a406a4">
+                <connector end-cap="arrow" />
+              </item>
+              <item id="a28f3a835aef44f991f605528fca6527" cid="GNR009" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:50:08" from="2e6afde0fa33415cb96021f37ac2c4a6" to="c965d0387240466db39f138ebf8a698d" visibility="package">
+                <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="horizontal-linear" colors="#FFF2F2F2,#FFFFFFFF" />
+                  <border color="#FF2A2A2A" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                  <alternate-styles>
+                    <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                      <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                      <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <background type="solid" colors="#FF203D85,#FF203D85" />
+                      <border color="#FF203D85" width="2" dash-style="Solid" />
+                      <label-connector color="#80000000" width="1" dash-style="Dash" />
+                    </alternate-style>
+                  </alternate-styles>
+                </style>
+              </item>
+              <item id="0bfd02c903494fe59d88b8ddc9f8a3a3" cid="GNR010" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:50:13" from="cdf1f3fa0795493e81639a1562f0571c" to="c965d0387240466db39f138ebf8a698d" visibility="package">
+                <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="horizontal-linear" colors="#FFF2F2F2,#FFFFFFFF" />
+                  <border color="#FF2A2A2A" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                  <alternate-styles>
+                    <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                      <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                      <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                      <background type="solid" colors="#FF203D85,#FF203D85" />
+                      <border color="#FF203D85" width="2" dash-style="Solid" />
+                      <label-connector color="#80000000" width="1" dash-style="Dash" />
+                    </alternate-style>
+                  </alternate-styles>
+                </style>
+              </item>
+              <item id="d6b3bba08712488d97a60861489e3e45" cid="DEP001" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:53:29" from="5f4b12fea2f54c349a44a4f36a6ea302" to="d283268caab04a4694d3f24c8c4dbcd2" visibility="package" />
+              <item id="9c67aa41b1aa416fa6fbd0a7a1bd4a76" cid="GNR014" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:53:55" from="b155ceb22c4848b6bb21f557d67deb69" to="ae564d0c7d784cebbc1c8fa7578b653b" visibility="package" />
+              <item id="3f7426a0622d429e8e8a76fc14be8844" cid="GNR015" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:53:58" from="85856c3d50ce402f90629dcb727bce13" to="ae564d0c7d784cebbc1c8fa7578b653b" visibility="package" />
+              <item id="14f6d1492a084c0c9e6efd98466a18db" cid="GNR016" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:54:07" from="2887da71cc794ff6b917ec979750a52c" to="5cf1034e0f9844768da4254413bb7ba2" visibility="package" />
+              <item id="e61d6cfd33db43f4b3ec45c20cf15926" cid="GNR017" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:54:13" from="b1b09031167647cbb8df805436239f64" to="5cf1034e0f9844768da4254413bb7ba2" visibility="package" />
+              <item id="7a2bf6f11c974da2858d89835cc5d4bc" cid="GNR018" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:55:16" from="77bbc4beefa5416e821c9face2b9023c" to="4fb81c21dd1c417593c1cc3ed48baf4b" visibility="package" />
+              <item id="33c2d8b89b89492a866d563916d19579" cid="GNR020" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/20/2021 23:55:31" from="59381e999da14090bfbdd48db10cfc97" to="4fb81c21dd1c417593c1cc3ed48baf4b" visibility="package" />
+              <item id="6ca77891707f42689d054d7b749f3525" cid="DEP005" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:03:34" from="3f123036cdd64e80a123396af8a406a4" to="c965d0387240466db39f138ebf8a698d" visibility="package" />
+              <item id="289048c5764a4fb1b78ac12a36e1234d" cid="DEP004" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:02:35" from="3f123036cdd64e80a123396af8a406a4" to="5cf1034e0f9844768da4254413bb7ba2" visibility="package" />
+              <item id="c772343b1efe43dfa2f9a4ccd5de5423" cid="DEP006" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:04:01" from="3f123036cdd64e80a123396af8a406a4" to="4fb81c21dd1c417593c1cc3ed48baf4b" visibility="package" />
+              <item id="04df4a2bf4d1484babf33f4dc22c31b3" cid="DEP007" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:04:07" from="3f123036cdd64e80a123396af8a406a4" to="ae564d0c7d784cebbc1c8fa7578b653b" visibility="package" />
+              <item id="ac661310bf0f4b7fa69aec081ce6ec32" cid="DEP008" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:04:12" from="3f123036cdd64e80a123396af8a406a4" to="5f4b12fea2f54c349a44a4f36a6ea302" visibility="package" />
+              <item id="9bbc9e15badb4d07913bf951a7552d5b" cid="DEP009" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:06:11" from="ae564d0c7d784cebbc1c8fa7578b653b" to="4fb81c21dd1c417593c1cc3ed48baf4b" visibility="package" />
+              <item id="5f38d7f48af44002a66c06efbbc5cc88" cid="DEP010" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:07:33" from="5cf1034e0f9844768da4254413bb7ba2" to="c965d0387240466db39f138ebf8a698d" visibility="package" />
+              <item id="ab1840f65f404f9c966cafdaf38efa9e" cid="DEP011" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:10:54" from="4fb81c21dd1c417593c1cc3ed48baf4b" to="c965d0387240466db39f138ebf8a698d" visibility="package" />
+              <item id="81b5f8368db34fc8bf3811b1a937fea6" cid="DEP012" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:12:54" from="4fb81c21dd1c417593c1cc3ed48baf4b" to="d283268caab04a4694d3f24c8c4dbcd2" visibility="package" />
+              <item id="f3ce216a81904968ab162efa8845e0c2" cid="DEP014" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:24:24" from="2887da71cc794ff6b917ec979750a52c" to="cdf1f3fa0795493e81639a1562f0571c" visibility="package" />
+              <item id="fd32356faba2452994076e4a896437fa" cid="DEP015" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:24:53" from="b1b09031167647cbb8df805436239f64" to="2e6afde0fa33415cb96021f37ac2c4a6" visibility="package" />
+              <item id="956bb6d5989e44c49d135173e9246e7c" cid="DEP016" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:25:19" from="b155ceb22c4848b6bb21f557d67deb69" to="77bbc4beefa5416e821c9face2b9023c" visibility="package" />
+              <item id="b1c1cf53100d4f80bab2de529cf190e6" cid="DEP017" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/21/2021 00:25:31" from="85856c3d50ce402f90629dcb727bce13" to="59381e999da14090bfbdd48db10cfc97" visibility="package" />
+            </abstract-items>
+            <layer id="6a6dbc75fc004d95a20d2c9ea22cd204" name="Default" visible="true" enabled="true" locked="false">
+              <item id="15d1bb3e41874fbfa37773cc31f2a9fc" iid="37caba73d9c6450d88f6c0c2e2ac3094" creation-date="05/20/2021 23:38:33" order-index="8" type="entity">
+                <layout ax="481" ay="116" awidth="136" aheight="35" x="481" y="116" width="136" height="35" rotation-center="0,10.5" />
+                <class />
+              </item>
+              <item id="3f123036cdd64e80a123396af8a406a4" iid="3b14b78e4115446a8f58860ef4749771" creation-date="05/20/2021 23:38:33" order-index="9" type="entity">
+                <layout ax="392" ay="204.5" awidth="314" aheight="406" x="392" y="204.5" width="314" height="406" />
+                <class />
+              </item>
+              <item id="ce25543d9e464f5cb848b3442dc5e48c" iid="6314e8fd96f84838968d4e44f231e0ee" creation-date="05/20/2021 23:46:29" order-index="15" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="549" y1="151" x2="549" y2="204" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+                  <points>
+                    <point x="549" y="151" />
+                    <point x="549" y="204" />
+                  </points>
+                </layout>
+                <relation from="15d1bb3e41874fbfa37773cc31f2a9fc" from-iid="37caba73d9c6450d88f6c0c2e2ac3094" to="3f123036cdd64e80a123396af8a406a4" to-iid="3b14b78e4115446a8f58860ef4749771" />
+              </item>
+              <item id="289048c5764a4fb1b78ac12a36e1234d" iid="b0b7162d5d3b4b50a05cf77654ba99be" creation-date="05/21/2021 00:02:35" order-index="31" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="549" y1="610" x2="549" y2="766" start-border-pos="0.625" end-border-pos="0.125954195857048" start-local-pos="157" end-local-pos="66" name-position="0,20">
+                  <points>
+                    <point x="549" y="610" />
+                    <point x="549" y="766" />
+                  </points>
+                </layout>
+                <relation from="3f123036cdd64e80a123396af8a406a4" from-iid="3b14b78e4115446a8f58860ef4749771" to="5cf1034e0f9844768da4254413bb7ba2" to-iid="a1924a6346ac4a60bae415a952db9f38" />
+              </item>
+              <item id="5cf1034e0f9844768da4254413bb7ba2" iid="a1924a6346ac4a60bae415a952db9f38" creation-date="05/20/2021 23:38:33" order-index="5" type="entity">
+                <layout ax="483.5" ay="766.5" awidth="131" aheight="56" x="483.5" y="766.5" width="131" height="56" />
+                <class />
+              </item>
+              <item id="2887da71cc794ff6b917ec979750a52c" iid="850cb93a37e14d409ed533297d27825c" creation-date="05/20/2021 23:38:33" order-index="2" type="entity">
+                <layout ax="368.5" ay="872" awidth="138" aheight="56" x="368.5" y="872" width="138" height="56" />
+                <class />
+              </item>
+              <item id="b1b09031167647cbb8df805436239f64" iid="1a0b8b51307d43368620b70bc435baa2" creation-date="05/20/2021 23:38:33" order-index="12" type="entity">
+                <layout ax="579" ay="872" awidth="141" aheight="56" x="579" y="872" width="141" height="56" />
+                <class />
+              </item>
+              <item id="14f6d1492a084c0c9e6efd98466a18db" iid="67edcc8fa36a4505bd398c90484280d6" creation-date="05/20/2021 23:54:07" order-index="22" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="467" y1="872" x2="520" y2="822" start-border-pos="0.17902307925017" end-border-pos="0.680955610202469" name-position="0,20">
+                  <points>
+                    <point x="467" y="872" />
+                    <point x="520" y="822" />
+                  </points>
+                </layout>
+                <relation from="2887da71cc794ff6b917ec979750a52c" from-iid="850cb93a37e14d409ed533297d27825c" to="5cf1034e0f9844768da4254413bb7ba2" to-iid="a1924a6346ac4a60bae415a952db9f38" />
+              </item>
+              <item id="e61d6cfd33db43f4b3ec45c20cf15926" iid="0d575e41d7b446aaa66b3778599c1984" creation-date="05/20/2021 23:54:13" order-index="23" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="623" y1="872" x2="576" y2="822" start-border-pos="0.0785828718902371" end-border-pos="0.574085381194835" name-position="0,20">
+                  <points>
+                    <point x="623" y="872" />
+                    <point x="576" y="822" />
+                  </points>
+                </layout>
+                <relation from="b1b09031167647cbb8df805436239f64" from-iid="1a0b8b51307d43368620b70bc435baa2" to="5cf1034e0f9844768da4254413bb7ba2" to-iid="a1924a6346ac4a60bae415a952db9f38" />
+              </item>
+              <item id="cdf1f3fa0795493e81639a1562f0571c" iid="2e6a274a5fd24df5ab03c59bab8a7d7d" creation-date="05/20/2021 23:38:33" order-index="1" type="entity">
+                <layout ax="212" ay="861" awidth="84" aheight="35" x="212" y="861" width="84" height="35" />
+                <class />
+              </item>
+              <item id="c965d0387240466db39f138ebf8a698d" iid="17624c6eae514180848a5697553bf7a3" creation-date="05/20/2021 23:38:33" order-index="4" type="entity">
+                <layout ax="157" ay="777" awidth="64" aheight="35" x="157" y="777" width="64" height="35" />
+                <class />
+              </item>
+              <item id="2e6afde0fa33415cb96021f37ac2c4a6" iid="3c1ce409fd6047a790d3fd37850544c3" creation-date="05/20/2021 23:38:33" order-index="11" type="entity">
+                <layout ax="70" ay="861" awidth="87" aheight="35" x="70" y="861" width="87" height="35" />
+                <class />
+              </item>
+              <item id="a28f3a835aef44f991f605528fca6527" iid="56cbf6598d4444b28b83147f8fb0f800" creation-date="05/20/2021 23:50:08" order-index="16" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="129" y1="861" x2="173" y2="812" start-border-pos="0.170053372437927" end-border-pos="0.687779009342194" name-position="0,20">
+                  <points>
+                    <point x="129" y="861" />
+                    <point x="173" y="812" />
+                  </points>
+                </layout>
+                <relation from="2e6afde0fa33415cb96021f37ac2c4a6" from-iid="3c1ce409fd6047a790d3fd37850544c3" to="c965d0387240466db39f138ebf8a698d" to-iid="17624c6eae514180848a5697553bf7a3" />
+              </item>
+              <item id="0bfd02c903494fe59d88b8ddc9f8a3a3" iid="9aec41224bfa4810ae5d7c84a556b241" creation-date="05/20/2021 23:50:13" order-index="17" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="241" y1="861" x2="203" y2="812" start-border-pos="0.0858489445277623" end-border-pos="0.570591509342194" name-position="0,20">
+                  <points>
+                    <point x="241" y="861" />
+                    <point x="203" y="812" />
+                  </points>
+                </layout>
+                <relation from="cdf1f3fa0795493e81639a1562f0571c" from-iid="2e6a274a5fd24df5ab03c59bab8a7d7d" to="c965d0387240466db39f138ebf8a698d" to-iid="17624c6eae514180848a5697553bf7a3" />
+              </item>
+              <item id="b155ceb22c4848b6bb21f557d67deb69" iid="8d93aef0e5904d26a5933ac1ff75e6da" creation-date="05/20/2021 23:38:33" order-index="3" type="entity">
+                <layout ax="852.25" ay="872" awidth="144" aheight="56" x="852.25" y="872" width="144" height="56" />
+                <class />
+              </item>
+              <item id="ae564d0c7d784cebbc1c8fa7578b653b" iid="595f1a2cdff1498198eabfea2c1787d4" creation-date="05/20/2021 23:38:33" order-index="0" type="entity">
+                <layout ax="954.75" ay="764.5" awidth="144" aheight="56" x="954.75" y="764.5" width="144" height="56" />
+                <class />
+              </item>
+              <item id="85856c3d50ce402f90629dcb727bce13" iid="eae327e127ec45678ff644a5b827febd" creation-date="05/20/2021 23:38:33" order-index="13" type="entity">
+                <layout ax="1090.5" ay="872" awidth="144" aheight="56" x="1090.5" y="872" width="144" height="56" />
+                <class />
+              </item>
+              <item id="9c67aa41b1aa416fa6fbd0a7a1bd4a76" iid="e1c65f2cfc4e46539ce92f73a34ef1ae" creation-date="05/20/2021 23:53:55" order-index="20" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="951" y1="872" x2="1000" y2="820" start-border-pos="0.170926517910428" end-border-pos="0.67092662387424" name-position="0,20">
+                  <points>
+                    <point x="951" y="872" />
+                    <point x="1000" y="820" />
+                  </points>
+                </layout>
+                <relation from="b155ceb22c4848b6bb21f557d67deb69" from-iid="8d93aef0e5904d26a5933ac1ff75e6da" to="ae564d0c7d784cebbc1c8fa7578b653b" to-iid="595f1a2cdff1498198eabfea2c1787d4" />
+              </item>
+              <item id="3f7426a0622d429e8e8a76fc14be8844" iid="2e72e5de345d4af78c52b52211f541ed" creation-date="05/20/2021 23:53:58" order-index="21" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1127" y1="872" x2="1062" y2="820" start-border-pos="0.0633680555555556" end-border-pos="0.563802083333333" name-position="0,20">
+                  <points>
+                    <point x="1127" y="872" />
+                    <point x="1062" y="820" />
+                  </points>
+                </layout>
+                <relation from="85856c3d50ce402f90629dcb727bce13" from-iid="eae327e127ec45678ff644a5b827febd" to="ae564d0c7d784cebbc1c8fa7578b653b" to-iid="595f1a2cdff1498198eabfea2c1787d4" />
+              </item>
+              <item id="77bbc4beefa5416e821c9face2b9023c" iid="9a3d71362fdf43c2ad5c498705e0d2ea" creation-date="05/20/2021 23:38:33" order-index="0" type="entity">
+                <layout ax="1265.75" ay="587.25" awidth="316" aheight="75" x="1265.75" y="587.25" width="316" height="75" />
+                <class />
+              </item>
+              <item id="59381e999da14090bfbdd48db10cfc97" iid="9edfa4b0feee48b9a2cca6efb8bd6928" creation-date="05/20/2021 23:38:33" order-index="10" type="entity">
+                <layout ax="1269.25" ay="427.25" awidth="309" aheight="75" x="1269.25" y="427.25" width="309" height="75" />
+                <class />
+              </item>
+              <item id="4fb81c21dd1c417593c1cc3ed48baf4b" iid="12be5e985b974a81a5b087a736bb17bb" creation-date="05/20/2021 23:38:33" order-index="14" type="entity">
+                <layout ax="852.25" ay="427.25" awidth="349" aheight="235" x="852.25" y="427.25" width="349" height="235" />
+                <class />
+              </item>
+              <item id="7a2bf6f11c974da2858d89835cc5d4bc" iid="38b357c00f6b431883100d642f9cbc65" creation-date="05/20/2021 23:55:16" order-index="27" type="relation">
+                <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1266" y1="621" x2="1201" y2="620" start-border-pos="0.886050008138021" end-border-pos="0.454787239432335" end-local-pos="192.5" name-position="0,20">
+                  <points>
+                    <point x="1266" y="621" />
+                    <point x="1201" y="620" />
+                  </points>
+                </layout>
+                <relation from="77bbc4beefa5416e821c9face2b9023c" from-iid="9a3d71362fdf43c2ad5c498705e0d2ea" to="4fb81c21dd1c417593c1cc3ed48baf4b" to-iid="12be5e985b974a81a5b087a736bb17bb" />
+              </item>
+              <item id="33c2d8b89b89492a866d563916d19579" iid="9cff8e4d30fa419faf42623b3352354a" creation-date="05/20/2021 23:55:31" order-index="28" type="relation">
+                <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1269" y1="465" x2="1201" y2="465" start-border-pos="0.874166666666667" end-border-pos="0.289893615990877" end-local-pos="37.5" name-position="0,20">
+                  <points>
+                    <point x="1269" y="465" />
+                    <point x="1201" y="465" />
+                  </points>
+                </layout>
+                <relation from="59381e999da14090bfbdd48db10cfc97" from-iid="9edfa4b0feee48b9a2cca6efb8bd6928" to="4fb81c21dd1c417593c1cc3ed48baf4b" to-iid="12be5e985b974a81a5b087a736bb17bb" />
+              </item>
+              <item id="d283268caab04a4694d3f24c8c4dbcd2" iid="9ad80148bc1548e58ee9f6a9c7ec97a8" creation-date="05/20/2021 23:38:33" order-index="6" type="entity">
+                <layout ax="1104.75" ay="218.25" awidth="254" aheight="103" x="1104.75" y="218.25" width="254" height="103" />
+                <class />
+              </item>
+              <item id="5f4b12fea2f54c349a44a4f36a6ea302" iid="6f959a7c363f4ecdb8d035dc06dd557f" creation-date="05/20/2021 23:38:33" order-index="7" type="entity">
+                <layout ax="852.25" ay="241.75" awidth="179" aheight="56" x="852.25" y="241.75" width="179" height="56" />
+                <class />
+              </item>
+              <item id="d6b3bba08712488d97a60861489e3e45" iid="dc87f9d5cdaa4b4f817e03e1f663fe24" creation-date="05/20/2021 23:53:29" order-index="19" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1031" y1="270" x2="1105" y2="270" start-border-pos="0.376116071428571" end-border-pos="0.874393203883495" name-position="0,20">
+                  <points>
+                    <point x="1031" y="270" />
+                    <point x="1105" y="270" />
+                  </points>
+                </layout>
+                <relation from="5f4b12fea2f54c349a44a4f36a6ea302" from-iid="6f959a7c363f4ecdb8d035dc06dd557f" to="d283268caab04a4694d3f24c8c4dbcd2" to-iid="9ad80148bc1548e58ee9f6a9c7ec97a8" />
+              </item>
+              <item id="6ca77891707f42689d054d7b749f3525" iid="af6b003165a14ed4975dac7be5186eac" creation-date="05/21/2021 00:03:34" order-index="32" type="relation">
+                <layout line-style="oblique" start-auto-side="false" end-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="462" y1="610" x2="189" y2="777" start-border-pos="0.694267511367798" end-border-pos="0.125" start-local-pos="405.5" end-local-pos="32" name-position="0,20">
+                  <points>
+                    <point x="462" y="610" />
+                    <point x="461" y="730" />
+                    <point x="189" y="732" />
+                    <point x="189" y="777" />
+                  </points>
+                </layout>
+                <relation from="3f123036cdd64e80a123396af8a406a4" from-iid="3b14b78e4115446a8f58860ef4749771" to="c965d0387240466db39f138ebf8a698d" to-iid="17624c6eae514180848a5697553bf7a3" />
+              </item>
+              <item id="c772343b1efe43dfa2f9a4ccd5de5423" iid="ee4e2695429a4057b5a238818d1d13c6" creation-date="05/21/2021 00:04:01" order-index="33" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="706" y1="560" x2="852" y2="560" start-border-pos="0.468903943896294" end-border-pos="0.858510635793209" start-local-pos="355.5" end-local-pos="133.5" name-position="0,20">
+                  <points>
+                    <point x="706" y="560" />
+                    <point x="852" y="560" />
+                  </points>
+                </layout>
+                <relation from="3f123036cdd64e80a123396af8a406a4" from-iid="3b14b78e4115446a8f58860ef4749771" to="4fb81c21dd1c417593c1cc3ed48baf4b" to-iid="12be5e985b974a81a5b087a736bb17bb" />
+              </item>
+              <item id="04df4a2bf4d1484babf33f4dc22c31b3" iid="68a0168e2a244447995c1b1f071a5062" creation-date="05/21/2021 00:04:07" order-index="34" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="548" y1="610" x2="1028" y2="764" start-border-pos="0.625796183943748" end-border-pos="0.126977284749349" start-local-pos="406" end-local-pos="-34.5" name-position="0,20">
+                  <points>
+                    <point x="548" y="610" />
+                    <point x="549" y="729.5" />
+                    <point x="729" y="729.5" />
+                    <point x="727" y="729.5" />
+                    <point x="1029" y="729" />
+                    <point x="1028" y="764" />
+                  </points>
+                </layout>
+                <relation from="3f123036cdd64e80a123396af8a406a4" from-iid="3b14b78e4115446a8f58860ef4749771" to="ae564d0c7d784cebbc1c8fa7578b653b" to-iid="595f1a2cdff1498198eabfea2c1787d4" />
+              </item>
+              <item id="ac661310bf0f4b7fa69aec081ce6ec32" iid="a278cf29695741e0ba98f59d0f2504ee" creation-date="05/21/2021 00:04:12" order-index="35" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="706" y1="270" x2="852" y2="270" start-border-pos="0.290178570896387" end-border-pos="0.873883928571429" start-local-pos="65.5" name-position="0,20">
+                  <points>
+                    <point x="706" y="270" />
+                    <point x="852" y="270" />
+                  </points>
+                </layout>
+                <relation from="3f123036cdd64e80a123396af8a406a4" from-iid="3b14b78e4115446a8f58860ef4749771" to="5f4b12fea2f54c349a44a4f36a6ea302" to-iid="6f959a7c363f4ecdb8d035dc06dd557f" />
+              </item>
+              <item id="9bbc9e15badb4d07913bf951a7552d5b" iid="a4d3027c35574376a009e1ae416c44eb" creation-date="05/21/2021 00:06:11" order-index="36" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1027" y1="764" x2="1027" y2="662" start-border-pos="0.126230875651042" end-border-pos="0.624820916905444" name-position="0,20">
+                  <points>
+                    <point x="1027" y="764" />
+                    <point x="1028" y="731" />
+                    <point x="1026.75" y="731" />
+                    <point x="1027" y="662" />
+                  </points>
+                </layout>
+                <relation from="ae564d0c7d784cebbc1c8fa7578b653b" from-iid="595f1a2cdff1498198eabfea2c1787d4" to="4fb81c21dd1c417593c1cc3ed48baf4b" to-iid="12be5e985b974a81a5b087a736bb17bb" />
+              </item>
+              <item id="5f38d7f48af44002a66c06efbbc5cc88" iid="127164d823e2425584ea8a93535d91cc" creation-date="05/21/2021 00:07:33" order-index="37" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="484" y1="794" x2="221" y2="794" start-border-pos="0.877232142857143" end-border-pos="0.371428571428571" name-position="0,20">
+                  <points>
+                    <point x="484" y="794" />
+                    <point x="221" y="794" />
+                  </points>
+                </layout>
+                <relation from="5cf1034e0f9844768da4254413bb7ba2" from-iid="a1924a6346ac4a60bae415a952db9f38" to="c965d0387240466db39f138ebf8a698d" to-iid="17624c6eae514180848a5697553bf7a3" />
+              </item>
+              <item id="ab1840f65f404f9c966cafdaf38efa9e" iid="86769dff87e34006886a56e5338cf7ab" creation-date="05/21/2021 00:10:54" order-index="38" type="relation">
+                <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-to-fields="false" auto-path="" x1="1201" y1="545" x2="190" y2="812" start-border-pos="0.375" end-border-pos="0.621651768684387" start-local-pos="117.5" name-position="0,20">
+                  <points>
+                    <point x="1201" y="545" />
+                    <point x="1632" y="549" />
+                    <point x="1636" y="943" />
+                    <point x="189" y="951" />
+                    <point x="190" y="815" />
+                    <point x="190" y="812" />
+                  </points>
+                </layout>
+                <relation from="4fb81c21dd1c417593c1cc3ed48baf4b" from-iid="12be5e985b974a81a5b087a736bb17bb" to="c965d0387240466db39f138ebf8a698d" to-iid="17624c6eae514180848a5697553bf7a3" />
+              </item>
+              <item id="81b5f8368db34fc8bf3811b1a937fea6" iid="10b5e6dec21941d2b37c3c102e25a867" creation-date="05/21/2021 00:12:54" order-index="39" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1030" y1="427" x2="1233" y2="321" start-border-pos="0.127215890966377" end-border-pos="0.623832882858637" name-position="0,20">
+                  <points>
+                    <point x="1030" y="427" />
+                    <point x="1031.25" y="379" />
+                    <point x="1234.5" y="379" />
+                    <point x="1233" y="321" />
+                  </points>
+                </layout>
+                <relation from="4fb81c21dd1c417593c1cc3ed48baf4b" from-iid="12be5e985b974a81a5b087a736bb17bb" to="d283268caab04a4694d3f24c8c4dbcd2" to-iid="9ad80148bc1548e58ee9f6a9c7ec97a8" />
+              </item>
+              <item id="f3ce216a81904968ab162efa8845e0c2" iid="2c73139b9ac24b40a1bc92d786769970" creation-date="05/21/2021 00:24:24" order-index="40" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="438" y1="928" x2="254" y2="896" start-border-pos="0.624094202898551" end-border-pos="0.62593986874535" name-position="0,20">
+                  <points>
+                    <point x="438" y="928" />
+                    <point x="438" y="992" />
+                    <point x="252" y="992" />
+                    <point x="254" y="896" />
+                  </points>
+                </layout>
+                <relation from="2887da71cc794ff6b917ec979750a52c" from-iid="850cb93a37e14d409ed533297d27825c" to="cdf1f3fa0795493e81639a1562f0571c" to-iid="2e6a274a5fd24df5ab03c59bab8a7d7d" />
+              </item>
+              <item id="fd32356faba2452994076e4a896437fa" iid="7225906a07754eb4b101ebe1b3071bcc" creation-date="05/21/2021 00:24:53" order-index="41" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="650" y1="928" x2="114" y2="896" start-border-pos="0.624113475177305" end-border-pos="0.6239492262917" name-position="0,20">
+                  <points>
+                    <point x="650" y="928" />
+                    <point x="650" y="1009" />
+                    <point x="113" y="1012" />
+                    <point x="114" y="896" />
+                  </points>
+                </layout>
+                <relation from="b1b09031167647cbb8df805436239f64" from-iid="1a0b8b51307d43368620b70bc435baa2" to="2e6afde0fa33415cb96021f37ac2c4a6" to-iid="3c1ce409fd6047a790d3fd37850544c3" />
+              </item>
+              <item id="956bb6d5989e44c49d135173e9246e7c" iid="f1d28edd0acf4f378a8df2aa2731875a" creation-date="05/21/2021 00:25:19" order-index="42" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="924" y1="928" x2="1425" y2="662" start-border-pos="0.625434027777778" end-border-pos="0.624245365963706" name-position="0,20">
+                  <points>
+                    <point x="924" y="928" />
+                    <point x="924" y="994" />
+                    <point x="1431" y="993" />
+                    <point x="1425" y="662" />
+                  </points>
+                </layout>
+                <relation from="b155ceb22c4848b6bb21f557d67deb69" from-iid="8d93aef0e5904d26a5933ac1ff75e6da" to="77bbc4beefa5416e821c9face2b9023c" to-iid="9a3d71362fdf43c2ad5c498705e0d2ea" />
+              </item>
+              <item id="b1c1cf53100d4f80bab2de529cf190e6" iid="87ce443d3ba14ab48e6bea931e4a5482" creation-date="05/21/2021 00:25:31" order-index="43" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1234" y1="899" x2="1578" y2="467" start-border-pos="0.372034890311105" end-border-pos="0.381392923990885" name-position="0,20">
+                  <points>
+                    <point x="1234" y="899" />
+                    <point x="1704" y="895" />
+                    <point x="1701" y="468" />
+                    <point x="1578" y="467" />
+                  </points>
+                </layout>
+                <relation from="85856c3d50ce402f90629dcb727bce13" from-iid="eae327e127ec45678ff644a5b827febd" to="59381e999da14090bfbdd48db10cfc97" to-iid="9edfa4b0feee48b9a2cca6efb8bd6928" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p130c13e78af54dd1b044d87d685d0dbd_969066726" name="Packages" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>05/20/2021 23:38:33</creation-date>
+          <change-date>05/20/2021 23:38:33</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="d89fe069d6794f0e82552cba7481239d" name="Default" visible="true" enabled="true" locked="false">
+          <item id="aadd6f5e2ad245d4aea39a83c73fa3ec" iid="a7e8e4cc15a1464aa144c72fb70b9ae4" creation-date="05/20/2021 23:38:33" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="249" aheight="56" x="0" y="0" width="249" height="56" />
+            <package name-in-body="false" />
+          </item>
+          <item id="0030985b90c5474cac1e20a8c8f9ef95" iid="e5b49a056f0449d0aaa63655815cf9f3" creation-date="05/20/2021 23:38:33" order-index="1" type="entity">
+            <layout ax="65" ay="156" awidth="119" aheight="56" x="65" y="156" width="119" height="56" />
+            <package name-in-body="false" />
+          </item>
+          <item id="815fa62ead5f47ff9b80a15b59335142" iid="5bfd3eb8a09e493cb9ff3d027fd3fc02" creation-date="05/20/2021 23:38:33" order-index="2" type="relation">
+            <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="124" y1="156" x2="124" y2="56" start-border-pos="0.123453781512605" end-border-pos="0.625" name-position="0,20">
+              <points>
+                <point x="124" y="156" />
+                <point x="124" y="106" />
+                <point x="124" y="106" />
+                <point x="124" y="56" />
+              </points>
+            </layout>
+            <relation from="0030985b90c5474cac1e20a8c8f9ef95" from-iid="e5b49a056f0449d0aaa63655815cf9f3" to="aadd6f5e2ad245d4aea39a83c73fa3ec" to-iid="a7e8e4cc15a1464aa144c72fb70b9ae4" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
