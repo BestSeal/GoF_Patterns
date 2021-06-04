@@ -1,28 +1,29 @@
-﻿namespace Composite
+﻿using System;
+
+namespace Composite
 {
-    public class Primitive : IComponent
+    public abstract class Primitive : IComponent
     {
         public float BaggageWeight { get; set; }
-        
+        public float BaggageWeightLimit { get; set; }
+        public int NumOfSeats { get; set; }
         public int SeatNumber { get; set; }
 
-        public Primitive(float baggageWeight, int seatNumber)
+        public Primitive(int seatNumber, float baggageWeight)
         {
-            BaggageWeight = baggageWeight;
             SeatNumber = seatNumber;
+            BaggageWeight = baggageWeight;
         }
-        
-        public void Add(IComponent component, string planePart)
+        public void Add(IComponent component)
         {
         }
 
-        public void Remove(int seatNumber)
+        public void RemoveBaggage(int seatNumber)
         {
-            if (seatNumber == SeatNumber)
+            if (SeatNumber == seatNumber)
             {
                 BaggageWeight = 0;
             }
-            System.Console.WriteLine($"Baggage of passenger with {seatNumber} was taken off the plane.");
         }
     }
 }
