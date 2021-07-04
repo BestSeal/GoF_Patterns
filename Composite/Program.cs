@@ -8,7 +8,10 @@
             plane.Add(new Passenger(1, 10, typeof(EconomyClass)));
             plane.Add(new Passenger(1, 10, typeof(BusinessClass)));
             plane.Add(new Passenger(1, 10, typeof(FirstClass)));
-            
+            plane.PrintInfo();
+            plane.DisembarkPassenger(1, typeof(EconomyClass));
+            plane.PrintInfo();
+
         }
 
         private static Plane GetDefaultPlane()
@@ -28,6 +31,5 @@
 
             return plane;
         }
-        
     }
 }

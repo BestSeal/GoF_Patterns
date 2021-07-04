@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Linq;
 
 namespace Composite
@@ -24,6 +25,12 @@ namespace Composite
             {
                 Components.Add(component);
             }
+        }
+
+        public override void PrintInfo()
+        {
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine($"Crew on board:\nPilots - {NumOfPilots}\nStewardesses - {NumOfStewardess}");
         }
     }
 }

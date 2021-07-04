@@ -15,5 +15,9 @@ namespace Composite
         public void Add(IComponent component);
         
         public void RemoveBaggage(int seatNumber);
+
+        public IComponent DisembarkPassenger(int seatNumber, Type ticketType);
+
+        public void PrintInfo();
     }
 } 
