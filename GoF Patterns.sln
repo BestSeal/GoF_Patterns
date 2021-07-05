@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{B58DAF50-AF49-45B9-B69B-5A00C15F6C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{6B758ECF-DBBF-4626-91AC-84343C960608}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{10A76202-1454-490B-B185-4B3F0492EFD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{B58DAF50-AF49-45B9-B69B-5A00C15F6C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B58DAF50-AF49-45B9-B69B-5A00C15F6C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B58DAF50-AF49-45B9-B69B-5A00C15F6C52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B758ECF-DBBF-4626-91AC-84343C960608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B758ECF-DBBF-4626-91AC-84343C960608}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B758ECF-DBBF-4626-91AC-84343C960608}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B758ECF-DBBF-4626-91AC-84343C960608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A76202-1454-490B-B185-4B3F0492EFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A76202-1454-490B-B185-4B3F0492EFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A76202-1454-490B-B185-4B3F0492EFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A76202-1454-490B-B185-4B3F0492EFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
