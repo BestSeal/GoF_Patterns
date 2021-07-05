@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proxy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="ImageProxy" Height="350" Width="525">
+    <Canvas x:Name="ImgCanvas" Background="Aqua" Focusable="True">
+            <Image x:Name="HoleImg" Source="/img/holder.jpg"/>
+        </Canvas>
 </Window>
