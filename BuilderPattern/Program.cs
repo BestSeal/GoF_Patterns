@@ -38,8 +38,6 @@
             bus1.Embus(new PrivilegedPassenger());
             
             bus1.Start();
-            
-
         }
     }
 }
