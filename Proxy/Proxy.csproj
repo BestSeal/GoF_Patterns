@@ -10,4 +10,11 @@
       <Folder Include="Img" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Img\placeholder.png" />
+      <Resource Include="Img\placeholder.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
 </Project>

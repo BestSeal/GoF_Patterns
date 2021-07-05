@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:Proxy"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-<Canvas>
-        <Image>
-                
-        </Image>
-</Canvas>
+    <Border BorderThickness="2" BorderBrush="Aqua">
+    <Canvas x:Name="MainCanvas">
+        <Border x:Name="ImageBorder" BorderThickness="5">
+            <Image x:Name="ProxyImage" Source="Img/placeholder.png" 
+                   MouseLeftButtonDown="ProxyImage_OnMouseLeftButtonDown"
+                   MouseMove="ProxyImage_OnMouseMove"
+                   MouseRightButtonDown="ProxyImage_OnMouseRightButtonDown"/>
+        </Border>
+    </Canvas>
+    </Border>
 </Window>
