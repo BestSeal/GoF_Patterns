@@ -10,7 +10,7 @@ namespace Proxy
         private Point _imageClickPosition;
         private Point _borderClickPosition;
 
-        private readonly Proxy _proxy;
+        private readonly ISubject _proxy;
         
         public MainWindow()
         {
@@ -50,7 +50,19 @@ namespace Proxy
             }
         }
         
-        public class Proxy
+        public interface ISubject
+        {
+            public Image Img { get; }
+            public ImageSource Source { set; }
+            public Border ImageBorder { get; }
+            public Point MousePos { get; set; }
+
+            public void Transform(Point point)
+            {
+            }
+        }
+        
+        public class Proxy : ISubject
         {
             public Point MousePos { get; set; }
             public Image Img { get; }

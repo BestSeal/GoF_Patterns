@@ -6,6 +6,7 @@ namespace Observer
     public class Lecturer : IObserver
     {
         public readonly static List<string> Subjects = new List<string>(new string[]{"Math","PE","IT","Language","Sleep"});
+        
         private readonly DB _db;
         private readonly Department _department;
         public string Name { get;}
