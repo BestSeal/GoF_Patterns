@@ -6,7 +6,23 @@ namespace Observer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var db = new DB();
+            var department = new Department();
+            var deansOffice = new DeansOffice(db);
+            var scheduler = new Scheduler();
+            
+            scheduler.Register(new Lecturer("Mike", db, department));
+            scheduler.Register(new Lecturer("Maria", db, department));
+            scheduler.Register(new Lecturer("John", db, department));
+            scheduler.Register(new Lecturer("Doe", db, department));
+            scheduler.Register(deansOffice);
+            deansOffice.Register(department);
+            
+            scheduler.Notify();
+            
+            scheduler.Remove(department.Lecturers[0]);
+            
+            scheduler.Notify();
         }
     }
 }
