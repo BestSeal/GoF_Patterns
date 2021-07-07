@@ -11,7 +11,7 @@ namespace Observer
         {
             if (sender is Lecturer lecturer)
             {
-                Console.WriteLine($"{lecturer.Name}, report not found.");
+                Console.WriteLine($"{lecturer.Name}: report not found.");
             }
         }
 

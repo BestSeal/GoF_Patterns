@@ -19,7 +19,7 @@ namespace Observer
             deansOffice.Register(department);
             
             scheduler.Notify();
-            
+            Console.WriteLine("---------------");
             scheduler.Remove(department.Lecturers[0]);
             
             scheduler.Notify();
